@@ -1,4 +1,6 @@
 import numpy as np
+
+"""
 b = np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
 
 print(b)
@@ -74,13 +76,40 @@ print(np.cos(a))
 mat1 = np.ones((2,3))
 mat2 = np.full((3,2),2)
 
-print(np.matmul(mat1,mat2))
+print(np.matmul(mat1,mat2)) 
 
 # find determinant
 mat3 = np.identity(3)
 print(mat3)
 print(np.linalg.det(mat3))
 
+
+
+# statistics
+
+stats = np.array([[1,2,3],[4,5,6]])
+
+print(np.max(stats,axis = 1))
+
+print(np.sum(stats,axis = 0))
+
+
+# reorganization of arrays
+before = np.array([[1,2,3,4],[5,6,7,8]])
+print(before)
+
+after = before.reshape((1,8))
+print(after)
+
+"""
+
+#vertically stacking vectors
+v1 = np.array([1,2,3,4])
+v2 = np.array([5,6,7,8])
+
+print(np.vstack([v1,v2,v2,v2,v2,v1]))
+
+print(np.hstack([v1,v2]))
 
 
 
